@@ -1,0 +1,242 @@
+[
+    {
+        "model-name": "Mobile",
+        "resource-file": "mobiles.json",
+        "table-name": "mobiles"
+    },
+    {
+        "model-name": "PriceSite",
+        "resource-file": "price_sites.json",
+        "table-name": "price_sites"
+    },
+    {
+        "model-name": "Brand",
+        "resource-file": "brands.json",
+        "table-name": "brands"
+    },
+    {
+        "model-name": "Currency",
+        "resource-file": "currencies.json",
+        "table-name": "currencies"
+    },
+    {
+        "model-name": "Price",
+        "resource-file": "prices.json",
+        "table-name": "prices"
+    },
+    {
+        "model-name": "Role",
+        "resource-file": "roles.json",
+        "table-name": "roles"
+    },
+    {
+        "model-name": "User",
+        "resource-file": "users.json",
+        "table-name": "users"
+    },
+    {
+        "model-name": "FileType",
+        "resource-file": "file_types.json",
+        "table-name": "file_types"
+    },
+    {
+        "model-name": "UploadedFile",
+        "resource-file": "uploaded_files.json",
+        "table-name": "uploaded_files"
+    },
+    {
+        "model-name": "Permission",
+        "resource-file": "permissions.json",
+        "table-name": "permissions"
+    },
+    {
+        "model-name": "EventLog",
+        "resource-file": "event_logs.json",
+        "table-name": "event_logs"
+    },
+    {
+        "model-name": "Setting",
+        "resource-file": "settings.json",
+        "table-name": "settings"
+    },
+    {
+        "model-name": "Animal",
+        "resource-file": "animals.json",
+        "table-name": "animals"
+    },
+    {
+        "model-name": "Medicine",
+        "resource-file": "medicines.json",
+        "table-name": "medicines"
+    },
+    {
+        "model-name": "Breed",
+        "resource-file": "breeds.json",
+        "table-name": "breeds"
+    },
+    {
+        "model-name": "Milk",
+        "resource-file": "milks.json",
+        "table-name": "milks"
+    },
+    {
+        "model-name": "Ledger",
+        "resource-file": "ledgers.json",
+        "table-name": "ledgers"
+    },
+    {
+        "model-name": "Inventory",
+        "resource-file": "inventories.json",
+        "table-name": "inventories"
+    },
+    {
+        "model-name": "Country",
+        "resource-file": "countries.json",
+        "table-name": "countries"
+    },
+    {
+        "model-name": "Department",
+        "resource-file": "departments.json",
+        "table-name": "departments"
+    },
+    {
+        "model-name": "Knowledge",
+        "resource-file": "knowledge.json",
+        "table-name": "knowledge"
+    },
+    {
+        "model-name": "Tag",
+        "resource-file": "tags.json",
+        "table-name": "tags"
+    },
+    {
+        "model-name": "Testimonial",
+        "resource-file": "testimonials.json",
+        "table-name": "testimonials"
+    },
+    {
+        "model-name": "Category",
+        "resource-file": "categories.json",
+        "table-name": "categories"
+    },
+    {
+        "model-name": "Article",
+        "resource-file": "articles.json",
+        "table-name": "articles"
+    },
+    {
+        "model-name": "Ticket",
+        "resource-file": "tickets.json",
+        "table-name": "tickets"
+    },
+    {
+        "model-name": "Comment",
+        "resource-file": "comments.json",
+        "table-name": "comments"
+    },
+    {
+        "model-name": "Service",
+        "resource-file": "services.json",
+        "table-name": "services"
+    },
+    {
+        "model-name": "Group",
+        "resource-file": "groups.json",
+        "table-name": "groups"
+    },
+    {
+        "model-name": "ContactUs",
+        "resource-file": "contact_uses.json",
+        "table-name": "contact_uses"
+    },
+    {
+        "model-name": "Product",
+        "resource-file": "products.json",
+        "table-name": "products"
+    },
+    {
+        "model-name": "Module",
+        "resource-file": "modules.json",
+        "table-name": "modules"
+    },
+    {
+        "model-name": "Order",
+        "resource-file": "orders.json",
+        "table-name": "orders"
+    },
+    {
+        "model-name": "SubscriptionPlan",
+        "resource-file": "subscription_plans.json",
+        "table-name": "subscription_plans"
+    },
+    {
+        "model-name": "BankInformation",
+        "resource-file": "bank_informations.json",
+        "table-name": "bank_informations"
+    },
+    {
+        "model-name": "Storage",
+        "resource-file": "storages.json",
+        "table-name": "storages"
+    },
+    {
+        "model-name": "Region",
+        "resource-file": "regions.json",
+        "table-name": "regions"
+    },
+    {
+        "model-name": "Ram",
+        "resource-file": "rams.json",
+        "table-name": "rams"
+    },
+    {
+        "model-name": "VariationPrice",
+        "resource-file": "variation_prices.json",
+        "table-name": "variation_prices"
+    },
+    {
+        "model-name": "Affiliate",
+        "resource-file": "affiliates.json",
+        "table-name": "affiliates"
+    },
+    {
+        "model-name": "FilterGroup",
+        "resource-file": "filter_groups.json",
+        "table-name": "filter_groups"
+    },
+    {
+        "model-name": "FilterTab",
+        "resource-file": "filter_tabs.json",
+        "table-name": "filter_tabs"
+    },
+    {
+        "model-name": "FilterSection",
+        "resource-file": "filter_sections.json",
+        "table-name": "filter_sections"
+    },
+    {
+        "model-name": "FilterOption",
+        "resource-file": "filter_options.json",
+        "table-name": "filter_options"
+    },
+    {
+        "model-name": "MobileRegion",
+        "resource-file": "mobile_regions.json",
+        "table-name": "mobile_regions"
+    },
+    {
+        "model-name": "MobileStorage",
+        "resource-file": "mobile_storages.json",
+        "table-name": "mobile_storages"
+    },
+    {
+        "model-name": "mobileRam",
+        "resource-file": "mobile_rams.json",
+        "table-name": "mobile_rams"
+    },
+    {
+        "model-name": "MobilePrice",
+        "resource-file": "mobile_prices.json",
+        "table-name": "mobile_prices"
+    }
+]

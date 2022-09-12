@@ -1,0 +1,152 @@
+.dd {
+    position: relative;
+    display: block;
+    margin: 0;
+    padding: 0;
+    max-width: 800px;
+    list-style: none;
+    font-size: 14px;
+    color: #444;
+    line-height: 20px;
+}
+
+.dd-list {
+    display: block;
+    position: relative;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+.dd-list .dd-list {
+    padding-left: 40px;
+    margin-top: 5px;
+}
+
+.dd-collapsed .dd-list {
+    display: none;
+}
+
+.dd-item, .dd-placeholder {
+    display: block;
+    position: relative;
+    margin-bottom: 5px;
+}
+
+.dd-handle {
+    display: block;
+    position: absolute;
+    margin: 0;
+    left: 0;
+    top: 0;
+    height: 40px;
+    width: 40px;
+    cursor: move;
+    background: #d6d6d6;
+    border-left: 2px solid #e6e7e8;
+}
+
+.dd-handle:hover {
+    background: #ddd;
+}
+
+.dd-handle:before {
+    font-family: FontAwesome, serif;
+    content: "\f047";
+    display: block;
+    position: absolute;
+    width: 100%;
+    text-align: center;
+    color: #fff;
+    font-size: 20px;
+    line-height: 40px;
+}
+
+.dd-item > button {
+    display: block;
+    position: relative;
+    cursor: pointer;
+    width: 25px;
+    height: 40px;
+    padding: 0;
+    text-indent: 100%;
+    white-space: nowrap;
+    overflow: hidden;
+    border: 0;
+    background: transparent;
+    line-height: 40px;
+    margin-left: 40px;
+    float: right;
+    color: #3c8dbc;
+}
+
+.dd-item > button:before {
+    font-family: FontAwesome, serif;
+    content: "\f067";
+    display: block;
+    position: absolute;
+    width: 100%;
+    text-align: center;
+    text-indent: 0;
+    font-size: 12px;
+}
+
+.dd-item > button[data-action="collapse"]:before {
+    font-family: FontAwesome, serif;
+    content: "\f068";
+    font-size: 12px;
+}
+
+.dd-placeholder,
+.dd-empty {
+    margin: 5px 0;
+    padding: 0;
+    min-height: 30px;
+    background: #f2fbff;
+    border: 1px dashed #b6bcbf;
+    box-sizing: border-box;
+    -moz-box-sizing: border-box;
+}
+
+.dd-dragel {
+    position: absolute;
+    pointer-events: none;
+    z-index: 9999;
+}
+
+.dd-content {
+    display: block;
+    height: 40px;
+    margin-left: 40px;
+    text-decoration: none;
+    font-weight: 600;
+    line-height: 40px;
+    padding-left: 10px;
+    background: #f4f4f4;
+    color: #666666;
+}
+
+.dd-list .tools {
+    position: absolute;
+    z-index: 99999;
+    right: 20px;
+    top: 9px;
+}
+
+.dd-list .tools i {
+    margin-right: 5px;
+    cursor: pointer;
+}
+
+.dd-list .tools button {
+    background: transparent;
+    color: #3c8dbc;
+    padding: 0;
+    border: 0;
+    margin: 0 5px;
+}
+
+.dd-list > li small.label {
+    margin-left: 10px;
+    font-size: 9px;
+}

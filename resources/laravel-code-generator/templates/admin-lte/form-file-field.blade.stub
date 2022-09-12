@@ -1,0 +1,20 @@
+
+            <div class="input-group uploaded-file-group">
+                @if(!empty([% field_value %]))
+                    <label class="input-group-btn" for="[% field_name %]_path">
+                        <img src="{{ asset('storage/' . [% field_value %]) }}"
+                             alt="[% field_title %]"
+                             style="width: 34px; height: 34px;margin-right: 10px;">
+                    </label>
+                @endif
+
+                <input type="text" class="form-control uploaded-file-name"
+                    value="{{ optional($[% model_name_singular_variable %])->[% field_name %] }}"
+                    id="[% field_name %]_path"
+                    readonly>
+                <label class="input-group-btn">
+                    <span class="btn btn-warning">
+                        Browse <input type="file" name="[% field_name %]" id="[% field_name %]" class="hidden[% css_class %]">
+                    </span>
+                </label>
+            </div>

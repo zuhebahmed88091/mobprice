@@ -1,0 +1,118 @@
+@extends('[% layout_name %]')
+
+@section('content-header')
+<h1>[% model_plural %]</h1>
+<ol class="breadcrumb">
+    <li><a href="#"><i class="fa fa-dashboard"></i> [% model_plural %]</a></li>
+    <li class="active">Listing</li>
+</ol>
+@endsection
+
+@section('content')
+
+@if(Session::has('success_message'))
+<div class="alert alert-success">
+    <span class="glyphicon glyphicon-ok"></span>
+    {!! session('success_message') !!}
+
+    <button type="button" class="close" data-dismiss="alert" aria-label="close">
+        <span aria-hidden="true">&times;</span>
+    </button>
+
+</div>
+@endif
+
+<div class="row">
+    <div class="col-xs-12">
+        <div class="box">
+            <div class="box-body">
+
+                @if(count($[% model_name_plural_variable %]) == 0)
+                <div class="row">
+                    <div class="col-sm-12">
+                        <a href="{{ route('[% create_route_name %]') }}"
+                           class="btn btn-xs btn-success pull-right"
+                           title="[% create_model %]">
+                            <i aria-hidden="true" class="fa fa-plus"></i>
+                        </a>
+                    </div>
+                </div>
+
+                <div class="panel-body text-center">
+                    <h4>[% no_models_available %]</h4>
+                </div>
+                @else
+                <div class="table-responsive">
+                    <table id="dataTable" class="table table-bordered table-striped">
+                        <thead>
+                        <tr>
+                            [% header_cells %]
+                            <th style="width:100px;">
+                                <a href="{{ route('[% create_route_name %]') }}"
+                                   class="btn btn-xs btn-success pull-right"
+                                   title="[% create_model %]">
+                                    <i aria-hidden="true" class="fa fa-plus"></i>
+                                </a>
+                            </th>
+                        </tr>
+                        </thead>
+                        <tbody>
+                        @foreach($[% model_name_plural_variable %] as $[% model_name_singular_variable %])
+                        <tr>
+                            [% body_cells %]
+                            <td class="text-center" style="width:100px;">
+
+                                <form method="POST"
+                                      action="{!! route('[% destroy_route_name %]', $[% model_name_singular_variable %]->[% primary_key %]) !!}"
+                                      accept-charset="UTF-8">
+                                    <input name="_method" value="DELETE" type="hidden">
+                                    {{ csrf_field() }}
+
+                                    <a href="{{ route('[% show_route_name %]', $[% model_name_singular_variable %]->[% primary_key %] ) }}"
+                                       class="btn btn-xs btn-info" title="[% show_model %]">
+                                        <i aria-hidden="true" class="fa fa-eye"></i>
+                                    </a>
+
+                                    <a href="{{ route('[% edit_route_name %]', $[% model_name_singular_variable %]->[% primary_key %] ) }}"
+                                       class="btn btn-xs btn-primary" title="[% edit_model %]">
+                                        <i aria-hidden="true" class="fa fa-pencil"></i>
+                                    </a>
+
+                                    <button type="submit" class="btn btn-xs btn-danger"
+                                            title="[% delete_model %]"
+                                            onclick="return confirm('[% confirm_delete %]')">
+                                        <i aria-hidden="true" class="fa fa-trash"></i>
+                                    </button>
+                                </form>
+
+                            </td>
+                        </tr>
+                        @endforeach
+                        </tbody>
+                    </table>
+                </div>
+
+                @endif
+
+            </div>
+            <!-- /.box-body -->
+        </div>
+        <!-- /.box -->
+    </div>
+    <!-- /.col -->
+</div>
+<!-- /.row -->
+@endsection
+
+<!-- page script -->
+@section('javascript')
+<script>
+    $(function () {
+        $('#dataTable').DataTable({
+            "columnDefs": [
+                {"orderable": false, "targets": -1}
+            ]
+        })
+    });
+</script>
+@endsection

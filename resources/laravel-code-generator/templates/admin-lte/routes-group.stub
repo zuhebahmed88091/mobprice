@@ -1,0 +1,8 @@
+
+Route::group(
+[
+    [% prefix %]
+    'middleware' => ['auth', 'checkPermission']
+], function () {
+[% routes %]
+});

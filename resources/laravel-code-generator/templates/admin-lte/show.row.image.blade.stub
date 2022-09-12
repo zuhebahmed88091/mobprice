@@ -1,0 +1,9 @@
+                    <tr>
+                        <th>[% field_title %]</th>
+                        <td>
+                            @if (!empty([% field_value %]))
+                                <img src="{{ asset('storage/' . [% field_value %]) }}"
+                                    alt="[% field_title %]" class="thumbnail medium" />
+                            @endif
+                        </td>
+                    </tr>

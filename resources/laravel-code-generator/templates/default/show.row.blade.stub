@@ -1,0 +1,4 @@
+                    <tr>
+                        <th width="25%">[% field_title %]</th>
+                        <td width="75%">{{ [% field_value %] }}</td>
+                    </tr>
